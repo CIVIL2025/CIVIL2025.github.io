@@ -54,32 +54,47 @@
   <meta property="og:video:secure" content="https://youtu.be/ADDVid" />
 
   <style>
-    .video-scroll-wrapper {
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      display: flex;
-      -webkit-overflow-scrolling: touch;
-    }
-    .video-item {
-      flex: 0 0 100%; /* full‑width slides */
-      scroll-snap-align: center;
-      position: relative;
-    }
-    .video-item video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    /* optional: hide scrollbar */
-    .video-scroll-wrapper::-webkit-scrollbar {
-      -ms-overflow-style: auto; 
-      scrollbar-width: auto;  
-    }
-    .video-scroll-wrapper {
-      -ms-overflow-style: none; 
-      scrollbar-width: none;     
-    }
-  </style>
+/* --- VIDEO‑CAROUSEL SCROLLBAR --- */
+.video-scroll-wrapper{
+  /* layout + snapping (unchanged) */
+  display:flex;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+
+  /* scrolling behaviour */
+  overflow-x:auto;      /* horizontal scroll ON  */
+  overflow-y:hidden;    /* vertical scroll OFF   */
+
+  /* Firefox scrollbar */
+  scrollbar-width:thin;           /* “auto” | “thin” */
+  scrollbar-color:#666 #eee;      /* thumb | track  */
+}
+
+/* WebKit scrollbar (Chrome/Safari/Edge) */
+.video-scroll-wrapper::-webkit-scrollbar{
+  height:6px;                     /* thickness      */
+}
+
+.video-scroll-wrapper::-webkit-scrollbar-track{
+  background:#eee;                /* track colour   */
+}
+
+.video-scroll-wrapper::-webkit-scrollbar-thumb{
+  background:#666;                /* thumb colour   */
+  border-radius:3px;              /* rounded thumb  */
+}
+
+.video-item {
+  flex: 0 0 100%; /* full‑width slides */
+  scroll-snap-align: center;
+  position: relative;
+}
+.video-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
 
 
 
@@ -89,10 +104,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">CIVIL: Causal and Intuitive Visual Imitation Learning</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="">Anonymous</a></sup>,</span>
-          </div>
-
+          
           <div class="is-size-5 publication-authors">
             <span class="author-block"></sup>Anonymous</span>
             <br>
@@ -283,11 +295,12 @@
     <p class="subtitle has-text-centered">Experiment 1: Scooping</p>
     <div class="content has-text-justified">
       <p>
-        The robot must use the spatula to scoop up the object on the pan.
+        The robot must use the spatula to scoop up the object on the pan. "Seen" denotes a background environment which has been seen by the robot during training, while
+        "Unseen" describes an background not seen by the robot during training.
       </p>
   </div>
 
-    <div class="video-scroll-wrapper" id="videoScroll">
+    <div class="video-scroll-wrapper" id="videoScroll1">
       <div class="video-item">
         <video muted autoplay loop preload="metadata" src="./static/resources/CIVIL_scoop.mp4"></video>
       </div>
@@ -304,11 +317,12 @@
     <p class="subtitle has-text-centered">Experiment 2: Stirring</p>
     <div class="content has-text-justified">
       <p>
-        The robot must use the spatula to stir the vegetables in the pan.
+        The robot must use the spatula to stir the vegetables in the pan. "Seen" denotes a background environment which has been seen by the robot during training, while
+        "Unseen" describes an background not seen by the robot during training.
       </p>
   </div>
 
-    <div class="video-scroll-wrapper" id="videoScroll">
+    <div class="video-scroll-wrapper" id="videoScroll2">
       <div class="video-item">
         <video muted autoplay loop preload="metadata" src="./static/resources/1200_video.mp4"></video>
       </div>
@@ -574,6 +588,7 @@
   </div> -->
 
 </section>
+
 
 
 
