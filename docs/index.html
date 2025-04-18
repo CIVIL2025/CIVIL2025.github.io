@@ -53,6 +53,34 @@
   <meta property="og:video" content="https://youtu.be/ADDVid" />
   <meta property="og:video:secure" content="https://youtu.be/ADDVid" />
 
+  <style>
+    .video-scroll-wrapper {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      -webkit-overflow-scrolling: touch;
+    }
+    .video-item {
+      flex: 0 0 100%; /* full‑width slides */
+      scroll-snap-align: center;
+      position: relative;
+    }
+    .video-item video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* optional: hide scrollbar */
+    .video-scroll-wrapper::-webkit-scrollbar {
+      -ms-overflow-style: auto; 
+      scrollbar-width: auto;  
+    }
+    .video-scroll-wrapper {
+      -ms-overflow-style: none; 
+      scrollbar-width: none;     
+    }
+  </style>
+
 
 
 <section class="hero">
@@ -132,10 +160,10 @@
             <h2 class="subtitle has-text-centered">
               <strong>Humans can teach robots more efficiently by showing what actions to take while also communicating why.</strong>
             </h2>
-            <video autoplay muted loop width="1080">
-              <!-- Update video -->
+            <!-- <video autoplay muted loop width="1080">
+              Update video
               <source src="./static/resources/Unseen_scoop.mp4" type="video/mp4">
-            </video>
+            </video> -->
 
           </div>
         </div>
@@ -202,7 +230,7 @@
   </div>
 </section>
 
-
+<!-- 
 <section class="section">
   <div class="columns is-centered">
     <div class="column is-half">
@@ -211,7 +239,7 @@
         <td>
           <br>
           <div class="columns is-centered has-text-centered">
-            <!--/ Front Fig of the paper. -->
+            / Front Fig of the paper.
             <img src="./static/resources/front.png" style="width: 80%;"></img>
           </div>
         </td>
@@ -224,7 +252,7 @@
         </div>
       </div>
   </div>
-  </div>
+  </div> -->
 
   <!-- <div class="columns is-centered">
     <div class="column is-half">
@@ -249,33 +277,53 @@
 
 </section>
 
-<section class="hero teaser">
-  <div class="hero-body">
-    <!-- Simulation 1. -->
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <!--/ Sim Title here. -->
-          <h2 class="title is-2">Scooping</h2>
-          <div class="columns is-centered has-text-centered">
-            <!--/ Sim Image here. -->
-            <video autoplay muted loop width="1080">
-              <!-- Update video -->
-              <source src="./static/resources/Unseen_scoop.mp4" type="video/mp4">
-            </video>
-          <div class="content has-text-centered">
-            <p>
-              (Unseen Position)
-            </p>
-          </div>
-          <video autoplay muted loop width="1080">
-            <!--/ Sim Video here -->
-            <source src="./static/resources/sim1_video.mp4" type="video/mp4">
-          </video>
-        </div>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Experiments</h2>
+    <p class="subtitle has-text-centered">Experiment 1: Scooping</p>
+    <div class="content has-text-justified">
+      <p>
+        The robot must use the spatula to scoop up the object on the pan.
+      </p>
+  </div>
+
+    <div class="video-scroll-wrapper" id="videoScroll">
+      <div class="video-item">
+        <video muted autoplay loop preload="metadata" src="./static/resources/CIVIL_scoop.mp4"></video>
       </div>
+      <div class="video-item">
+        <video muted autoplay loop preload="metadata" src="./static/resources/language_scoop.mp4"></video>
+      </div>
+      <!-- <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
+      </div> -->
+      <!-- <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div> -->
     </div>
-    <!--/ Simulation 1. -->
+    <p class="subtitle has-text-centered">Experiment 2: Stirring</p>
+    <div class="content has-text-justified">
+      <p>
+        The robot must use the spatula to stir the vegetables in the pan.
+      </p>
+  </div>
+
+    <div class="video-scroll-wrapper" id="videoScroll">
+      <div class="video-item">
+        <video muted autoplay loop preload="metadata" src="./static/resources/1200_video.mp4"></video>
+      </div>
+      <div class="video-item">
+        <video muted autoplay loop preload="metadata" src="./static/resources/language_stir.mp4"></video>
+      </div>
+      <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
+      </div>
+      <!-- <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div> -->
+    </div>
+  </div>
+
 </section>
 
 
@@ -541,102 +589,6 @@
   </div>
 </section> -->
 
-
-<!-- scrolling video player-->
-<style>
-  .video-scroll-wrapper {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    display: flex;
-    -webkit-overflow-scrolling: touch;
-  }
-  .video-item {
-    flex: 0 0 100%; /* full‑width slides */
-    scroll-snap-align: center;
-    position: relative;
-  }
-  .video-item video {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  /* optional: hide scrollbar */
-  .video-scroll-wrapper::-webkit-scrollbar {
-    -ms-overflow-style: auto; 
-    scrollbar-width: auto;  
-  }
-  .video-scroll-wrapper {
-    -ms-overflow-style: none; 
-    scrollbar-width: none;     
-  }
-</style>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Title</h2>
-    <p class="subtitle has-text-centered">Video Scroller</p>
-
-    <div class="video-scroll-wrapper" id="videoScroll">
-      <div class="video-item">
-        <video muted autoplay loop preload="metadata" src="./static/resources/1200_video.mp4"></video>
-      </div>
-      <div class="video-item">
-        <video muted autoplay loop preload="metadata" src="./static/resources/2400_video.mp4"></video>
-      </div>
-      <!-- <div class="video-item">
-        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
-      </div>
-      <div class="video-item">
-        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
-      </div> -->
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Title</h2>
-    <p class="subtitle has-text-centered">Video Scroller2</p>
-
-    <div class="video-scroll-wrapper" id="videoScroll">
-      <div class="video-item">
-        <video muted autoplay loop preload="metadata" src="./static/resources/1200_video.mp4"></video>
-      </div>
-      <div class="video-item">
-        <video muted autoplay loop preload="metadata" src="./static/resources/2400_video.mp4"></video>
-      </div>
-      <!-- <div class="video-item">
-        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
-      </div>
-      <div class="video-item">
-        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
-      </div> -->
-    </div>
-  </div>
-</section>
-
-<script>
-  // Play/pause logic: only the centered video (≥50% visible) should play.
-  (function(){
-    const videos = document.querySelectorAll('#videoScroll video');
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          // pause all others first
-          videos.forEach(v=>{ if(v!==entry.target) v.pause(); });
-          entry.target.play();
-        } else {
-          entry.target.pause();
-        }
-      });
-    }, {root: document.querySelector('#videoScroll'), threshold: 0.6});
-
-    videos.forEach(v=>{
-      observer.observe(v);
-      // ensure videos don\'t autoplay until scrolled into view
-      v.pause();
-    });
-  })();
-</script>
 
 
 
