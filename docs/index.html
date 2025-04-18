@@ -562,7 +562,8 @@
   }
   /* optional: hide scrollbar */
   .video-scroll-wrapper::-webkit-scrollbar {
-    display: none;
+    -ms-overflow-style: auto; 
+    scrollbar-width: auto;  
   }
   .video-scroll-wrapper {
     -ms-overflow-style: none; 
@@ -577,17 +578,38 @@
 
     <div class="video-scroll-wrapper" id="videoScroll">
       <div class="video-item">
-        <video muted preload="metadata" src="./static/resources/1200_video.mp4"></video>
+        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
       </div>
       <div class="video-item">
-        <video muted preload="metadata" src="./static/resources/2400_video.mp4"></video>
+        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div>
+      <!-- <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
       </div>
       <div class="video-item">
-        <video muted preload="metadata" src="./static/resources/1200_video.mp4"></video>
+        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div> -->
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Title</h2>
+    <p class="subtitle has-text-centered">Video Scroller2</p>
+
+    <div class="video-scroll-wrapper" id="videoScroll">
+      <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
       </div>
       <div class="video-item">
-        <video muted preload="metadata" src="./static/resources/2400_video.mp4"></video>
+        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
       </div>
+      <!-- <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/1200_video.mp4"></video>
+      </div>
+      <div class="video-item">
+        <video muted autoplay preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div> -->
     </div>
   </div>
 </section>
