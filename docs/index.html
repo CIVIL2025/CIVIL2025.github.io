@@ -198,8 +198,6 @@
     </div>
     <!--/ Abstract. -->
 
-    
-
     <!--/ Paper video. -->
   </div>
 </section>
@@ -542,6 +540,82 @@
     }</code></pre>
   </div>
 </section> -->
+
+
+<!-- scrolling video player-->
+<style>
+  .video-scroll-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+  }
+  .video-item {
+    flex: 0 0 100%; /* full‑width slides */
+    scroll-snap-align: center;
+    position: relative;
+  }
+  .video-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* optional: hide scrollbar */
+  .video-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .video-scroll-wrapper {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;     
+  }
+</style>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Title</h2>
+    <p class="subtitle has-text-centered">Video Scroller</p>
+
+    <div class="video-scroll-wrapper" id="videoScroll">
+      <div class="video-item">
+        <video muted preload="metadata" src="./static/resources/1200_video.mp4"></video>
+      </div>
+      <div class="video-item">
+        <video muted preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div>
+      <div class="video-item">
+        <video muted preload="metadata" src="./static/resources/1200_video.mp4"></video>
+      </div>
+      <div class="video-item">
+        <video muted preload="metadata" src="./static/resources/2400_video.mp4"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Play/pause logic: only the centered video (≥50% visible) should play.
+  (function(){
+    const videos = document.querySelectorAll('#videoScroll video');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          // pause all others first
+          videos.forEach(v=>{ if(v!==entry.target) v.pause(); });
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, {root: document.querySelector('#videoScroll'), threshold: 0.6});
+
+    videos.forEach(v=>{
+      observer.observe(v);
+      // ensure videos don\'t autoplay until scrolled into view
+      v.pause();
+    });
+  })();
+</script>
+
 
 
 <footer class="footer">
