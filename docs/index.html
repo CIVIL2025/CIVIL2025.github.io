@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+<meta charset="utf-8">
+<meta name="description" content="CIVIL: Causal and Intuitive Visual Imitation Learning">
+<meta name="keywords" content="Imitation Learning">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIVIL: Causal and Intuitive Visual Imitation Learning</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <link rel="icon" href="./favicon.ico?">
+  
+  <meta property="og:site_name" content="CIVIL: Causal and Intuitive Visual Imitation Learning" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="CIVIL: Causal and Intuitive Visual Imitation Learning" />
+  <!-- ADD Website Host link -->
+  <meta property="og:url" content="https://ADD URL" />
+  <meta property="og:image" content="./static/resources/problem.png" />
+  <meta property="og:image:secure" content="./static/resources/problem.png" />
+  <!-- ADD YouTube Link -->
+  <meta property="og:video" content="https://youtu.be/ADDVid" />
+  <meta property="og:video:secure" content="https://youtu.be/ADDVid" />
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CIVIL: Causal and Intuitive Visual Imitation Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="">Yinlong Dai</a></sup>,</span>
+            <span class="author-block"><a href="">Robert Ramirez Sanchez</a></sup>,</span>
+            <span class="author-block"><a href="">Ryan Jeronimus</a></sup>,</span>
+            <span class="author-block"><a href="">Shahabedin Sagheb</a></sup>,</span>
+            <span class="author-block"><a href="">Heramb Nemlekar</a></sup>,</span>
+            <span class="author-block"><a href="">Dylan P. Losey</a></sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"></sup>Anonymous</span>
+            <br>
+            <span class="brmod">Under Review</span>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/resources/civil.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <!-- arxiv Link. -->
+                <a href="https://arxiv.org/abs/XXXX.XXXX#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/XXXXXXXXX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/XXXXXXX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="content">
+            <h2 class="subtitle has-text-centered">
+              <strong>Humans can teach robots more efficiently by showing what actions to take while also communicating why.</strong>
+            </h2>
+            <video autoplay muted loop width="1080">
+              <!-- Update video -->
+              <source src="./static/resources/intro.mp4" type="video/mp4">
+            </video>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <!-- Abstract. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Robots can learn new tasks by imitating human
+              examples of the desired behavior. However, these examples are
+              fundamentally limited in the information they convey — while
+              they specify which actions to take given what the robot sees, they
+              do not explain why those actions are chosen. Without this knowl-
+              edge, the robot can misinterpret the human's examples since its
+              observations often contain extraneous details like object clutter
+              and varying backgrounds. This creates causal confusion: for in-
+              stance, the robot may mistakenly learn to choose actions based on
+              irrelevant background features, failing to perform the task when
+              the environment changes. To address this limitation, we advance
+              how humans provide examples to teach robots. We enable users
+              to intuitively specify task-relevant locations and objects using
+              markers and natural language while demonstrating the task. We
+              then propose a learning framework, CIVIL, that leverages this
+              augmented data to filter the robot's observations and extract
+              a feature representation that causally informs human actions.
+              Our framework uses these features to train a transformer-based
+              robot policy that, in practice, is able to emulate human behavior
+              without being confused by visual distractors. Our simulations
+              and real-world experiments demonstrate that robots trained with
+              CIVIL learn tasks more efficiently than prior approaches for
+              visual imitation learning. Consequently, our user study reveals
+              that this reduces the total time required to train robots that not
+              only mimic human actions but also their decision-making process
+              and thus generalize to previously unseen scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <!-- Get embed YouTube video link. -->
+          <iframe src="https://www.youtube.com/embed/XXXXXXXXX"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--/ Abstract. -->
+
+    
+
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <h2 class="title is-2" style="text-align: center;">How Does it Work?</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <!--/ Front Fig of the paper. -->
+            <img src="./static/resources/front.png" style="width: 80%;"></img>
+          </div>
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 18px">
+            Caption of the front figure here.
+          </p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- <div class="columns is-centered">
+    <div class="column is-half">
+      <h2 class="title is-2" style="text-align: center;">Algorithm and Implementation</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/algorithm.png" style="width: 80%;"></img>
+          </div>
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 18px">
+            Caption of the figure here.
+          </p>
+        </div>
+      </div>
+  </div>
+  </div> -->
+
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <!-- Simulation 1. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!--/ Sim Title here. -->
+          <h2 class="title is-2">Title of Simulation</h2>
+          <div class="columns is-centered has-text-centered">
+            <!--/ Sim Image here. -->
+            <img src="./static/resources/sim1_preview.png" style="width: 50%;"></img>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Fig Caption Here.
+            </p>
+          </div>
+          <video autoplay muted loop width="1080">
+            <!--/ Sim Video here. -->
+            <source src="./static/resources/sim1_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Simulation 1. -->
+</section>
+
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <!-- Simulation 2. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!-- Update Title. -->
+          <h2 class="title is-2">Simulation 2</h2>
+          <!-- <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/sim1_preview.png" style="width: 50%;"></img>
+          </div> -->
+          <div class="content has-text-justified">
+            <p>
+              Fig Caption Here.
+            </p>
+          </div>
+          <video autoplay muted loop width="1080">
+            <!-- Update video -->
+            <source src="./static/resources/sim2_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Simulation 2. -->
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <!-- Simulation 3. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!-- Update Title. -->
+          <h2 class="title is-2">Simulation 3</h2>
+          <div class="content has-text-justified">
+            <p>
+              Add fig Caption.
+            </p>
+          </div>
+          <video autoplay muted loop width="1080">
+            <!-- Update video -->
+            <source src="./static/resources/sim3_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Simulation 3. -->
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <!-- Your Experiment. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!-- Update Title. -->
+          <h2 class="title is-2">Experiments</h2>
+          <div class="content has-text-justified">
+            <p>
+              Describe The experiment.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" id="1" autoplay  muted loop   height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="2" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="3" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="4" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="5" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="6" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="7" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="8" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_9.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="9" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_10.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="10" autoplay  muted loop  height="100%">
+            <!-- Update video -->
+            <source src="./static/resources/user_11.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              Some Description from the paper.
+            </p>
+            <h2 class="subtitle has-text-centered">
+              <strong>Some Subtitle From The paper</strong>
+            </h2>
+            <video autoplay muted loop width="1080">
+              <!-- Update video -->
+              <source src="./static/resources/1200_video.mp4" type="video/mp4">
+            </video>
+
+            <h2 class="subtitle has-text-centered">
+              <strong>Some Subtitle From The paper</strong>
+            </h2>
+            <video autoplay muted loop width="1080">
+              <!-- Update video -->
+              <source src="./static/resources/2400_video.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </div>
+
+    
+    <!--/ Experiment. -->
+</section>
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="subtitle has-text-centered">
+            <strong>60 Seconds of Data</strong> 
+          </h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/resources/2400_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h2 class="subtitle has-text-centered">
+            <strong>60 Seconds of Data</strong> 
+          </h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/resources/2400_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <h2 class="title is-2" style="text-align: center;">Comparison to Baseline 1</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <!--/ Comparison Image here. -->
+            <img src="./static/resources/sim_cql.png" style="width: 100%;"></img>
+          </div>
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 18px">
+            Some description from the paper here.
+          </p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- <div class="columns is-centered">
+    <div class="column is-half">
+      <h2 class="title is-2" style="text-align: center;">Algorithm and Implementation</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/algorithm.png" style="width: 80%;"></img>
+          </div>
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 18px">
+            A summary of Stable-BC algorithm. The robot assumes access to the demonstrated state-action pairs and its own dynamics. If the robot has access to the environment dynamics, i.e. how the environment state evolves given the robot state, the environment state and the robot's actions, we use Equation (7) from the manuscript to train the robot's policy. However, if the robot does not know the environment dynamics (which is more often the case), we leverage the bounded stability and Equation (11) to learn a policy robust to covariate shift. The policy of the robot is a fully connected MLP initialized with random weights. The policy is optimized using ADAM optimizer with a learning rate of 0.001.
+          </p>
+        </div>
+      </div>
+  </div>
+  </div> -->
+
+</section>
+
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{mehta2024stable,
+      title={Stable-BC: Controlling Covariate Shift with Stable Behavior Cloning},
+      author={Mehta, Shaunak A and Ciftci, Yusuf Umut and Ramachandran, Balamurugan and Bansal, Somil and Losey, Dylan P},
+      journal={arXiv preprint arXiv:2408.06246},
+      year={2024}
+    }</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="">
+     <i class="fas fa-file-pdf"></i>
+   </a>
+   <a class="icon-link" href="https://github.com/VT-Collab/Stable-BC" class="external-link" disabled>
+     <i class="fab fa-github"></i>
+   </a>
+      <p>Page template borrowed from  <a href="https://human2robot.github.io/"><span class="dnerf">Whirl</span></a>, <a href="https://nerfies.github.io"><span class="dnerf">Nerfies</span></a>, <a href="https://energy-locomotion.github.io/"><span class="dnerf">Energy Locomotion</span></a> and <a href="https://robotic-telekinesis.github.io/"><span class="dnerf">Robotic Telekinesis</span></a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
