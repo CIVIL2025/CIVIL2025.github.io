@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+<meta charset="utf-8">
+<meta name="description" content="CIVIL: Causal and Intuitive Visual Imitation Learning">
+<meta name="keywords" content="Imitation Learning">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIVIL: Causal and Intuitive Visual Imitation Learning</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <link rel="icon" href="./favicon.ico?">
+  
+  <meta property="og:site_name" content="CIVIL: Causal and Intuitive Visual Imitation Learning" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="CIVIL: Causal and Intuitive Visual Imitation Learning" />
+  <!-- ADD Website Host link -->
+  <meta property="og:url" content="https://ADD URL" />
+  <meta property="og:image" content="./static/resources/problem.png" />
+  <meta property="og:image:secure" content="./static/resources/problem.png" />
+  <!-- ADD YouTube Link -->
+  <meta property="og:video" content="https://youtu.be/ADDVid" />
+  <meta property="og:video:secure" content="https://youtu.be/ADDVid" />
+
+  <style>
+/* --- VIDEO --- */
+.video-scroll-wrapper{
+  display:flex;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x mandatory;
+  scroll-padding-inline:10%;
+  padding:0;
+  gap: 0;
+  scrollbar-width:thin;
+  scrollbar-color:#666 #eee;
+}
+.video-scroll-wrapper::-webkit-scrollbar{
+  height:6px;
+}
+.video-scroll-wrapper::-webkit-scrollbar-track{
+  background:#eee;
+}
+.video-scroll-wrapper::-webkit-scrollbar-thumb{
+  background:#666;
+  border-radius:3px;
+}
+.video-item{
+  flex:0 0 100%;            
+  scroll-snap-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.video-item video{
+  width:80%;
+  height:auto;
+  display:block;
+}
+</style>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CIVIL: Causal and Intuitive Visual Imitation Learning</h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"></sup>Anonymous</span>
+            <br>
+            <span class="brmod">Under Review</span>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/resources/none"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <!-- arxiv Link. -->
+                <a href="https://arxiv.org/abs/XXXX.XXXX#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (coming soon)</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/7KeM9StNTnA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://civil2025.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="content">
+            <h2 class="subtitle has-text-centered">
+              <strong><i>Robots can learn tasks more effectively when the human provides a smaller number of demonstrations while communicating the key features behind their actions.</i></strong>
+            </h2>
+            <!-- <video autoplay muted loop width="1080">
+              Update video
+              <source src="./static/resources/Unseen_scoop.mp4" type="video/mp4">
+            </video> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <!-- Abstract. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Today's robots attempt to learn new tasks by imitating human examples. These robots watch the human complete the task, and then try to match the actions taken by the human expert. However, this standard approach to visual imitation learning is fundamentally limited: the robot observes <b><i>what</i></b> the human does, but not <b><i>why</i></b> the human chooses those behaviors. Without understanding the features that factor into the human's decisions, robot learners often misinterpret the human's examples (e.g., the robot incorrectly thinks the human picked up a coffee cup because of the color of clutter in the background). In practice, this results in causal confusion, inefficient learning, and robot policies that fail when the environment changes. We therefore propose a shift in perspective: instead of asking human teachers just to show what actions the robot should take, we also enable humans to intuitively indicate <i>why</i> they made those decisions. Under this paradigm human teachers can attach markers to task-relevant objects and use natural language prompts to describe important features. Our proposed algorithm, CIVIL, leverages this augmented demonstration data to filter the robot's visual observations and extract a feature representation that causally informs human actions. CIVIL then applies these causal features to train a transformer-based policy that --- when tested on the robot --- is able to emulate human behaviors without being confused by visual distractors or irrelevant items. Our simulations and real-world experiments demonstrate that robots trained with CIVIL learn both what actions to take and why to take those actions, resulting in better performance than state-of-the-art baselines. From the human's perspective, our user study reveals that this new training paradigm actually reduces the total time required for the robot to learn the task, and also improves the robot's performance in previously unseen scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <!-- Get embed YouTube video link. -->
+          <iframe src="https://www.youtube.com/embed/7KeM9StNTnA?autoplay=1"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<div class="section">
+  <div class="container is-max-desktop">
+    <div class="column is-full">
+      <h2 class="title is-2" style="text-align: center;">Method</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="video-item">
+            <video muted autoplay loop preload="metadata" src="./static/resources/user_marker_verbal.mp4"></video>
+          </div>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/method.png" style="width: 80%;"></img>
+          </div>
+
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 15px">
+            In Step 1, we enable
+humans to mark task-relevant positions (e.g., the coffee maker) with ArUco
+markers. In Step 2, as the human demonstrates the task they can provide
+natural language prompts that mention task-relevant objects (e.g., the cup).
+The resulting dataset for offline learning includes states <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">x</span>, images <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">y</span>, actions <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">u</span>, marker data <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">b</span>, and language prompts <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">l</span>. After providing data, the human
+removes the markers from the environment, and the robot processes its images
+to inpaint those markers so that they are not required at test time.
+          </p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2" style="text-align: center;">Algorithm and Implementation</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/architecture.png" style="width: 80%;"></img>
+          </div>
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 15px">
+            The training of our model is split into two phases. 
+            
+            (Left) In the first phase we supervise a subset of the features using a marker network <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">h</span> to explicitly encode the relevant poses <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">b</span> marked by the human expert. At the same time, we train the remaining features to implicitly capture other task-relevant information by masking the input images to highlight the relevant objects conveyed by the human through natural language instructions <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">l</span>. 
+            
+            (Right) In the second phase we freeze the encoder network and policy network, and train a causal network <span style="font-style: italic; font-family: 'Times New Roman', Times, serif;">c</span> to map the original images to the same features as those learned by the robot from the masked images in the first phase.
+          </p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Real-World Experiments</h2>
+    <div class="content has-text-justified">
+      <p>
+        We evaluate our approach in a real-world setting using a robot arm to perform 4 manipulation task on a kitchen table: Cooking, Pressing, Picking, and Pulling. The goal of this experiments is to test if CIVIL
+        remains effective even when trained with limited and noisy data. For the experiment expert humans demonstrate the tasks using a joystick while placing markers on task-relevant
+        objects, and providing language prompts. We compare against two visual imitation learning baselines in seen and unseen testing scenarios, "seen" denotes environment configurations
+        where the relevant objects are in regions included in the training data, while "unseen" describes configurations with relevant objects being in completely new regions.
+      </p>
+  </div>
+    <div class="columns is-centered has-text-centered">
+      <img src="./static/resources/robot_experiment_web.png" style="width: 80%;"></img>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Cooking</h2>
+    <div class="content has-text-justified">
+      <p> 
+      The goal for this task is for the robot arm to stir or scoop the contents of a pan at a fixed location with a spatula. The robot "stirs" if there are vegetable on
+      the pan, and "scoops" if there is meat instead. CIVIL performs the correct task successfully when distractor position changes or switched (tomato can and syrup bottle), while baselines sometimes get confused when background object changes.<b> Scroll left to see baseline performance.</b>
+      </p>
+  </div>
+  <div class="video-scroll-wrapper" id="videoScroll1">
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/CIVIL_cooking.mp4" style="width:100%;"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/oo_cooking.mp4" style="width:100%;"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/film_cooking.mp4" style="width:100%;"></video>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Pressing</h2>
+    <div class="content has-text-justified">
+      <p> 
+      In this task the robot presses a red button locate on the table along with 5 cups as distractors. During training the yellow cup is always located behind the button. CIVIL goes to the red button with distractors randomly placed, while the baselines either get confused by the distractors or go to the wrong position when distractors are moved around.  <b> Scroll left to see baseline performance.</b>
+      </p>
+  </div>
+  <div class="video-scroll-wrapper" id="videoScroll1">
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/civilbuttonpressing.mp4"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/violabuttonpressing.mp4"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/filmbuttonpressing.mp4"></video>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Picking</h2>
+    <div class="content has-text-justified">
+      <p> 
+      The task is for the robot to pick up the red cup, the robot will also see other objects such as a plate, a sugar box, a spam can, a pasta box, and sugar packets randomly
+      placed on the table. During training the robot will always observe a white bowl placed in front of the cup. CIVIL approaches and picks up the cup in unseen distractor configurations, while we observe baselines lose robustness and precision in their actions. <b> Scroll left to see baseline performance.</b>
+      </p>
+  </div>
+  <div class="video-scroll-wrapper" id="videoScroll1">
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/CIVIL_pick.mp4"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/oo_pick.mp4"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/film_pick.mp4"></video>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Pulling</h2>
+    <div class="content has-text-justified">
+      <p> 
+      The task is for the robot to pull a white bowl to the center of the table. Some distractors include another bowl, some vegetables, and a cheez-it box. During training
+      an eggplant is placed inside the bowl, and a carrot is placed in front of the bowl. CIVIL is able to pull the bowl in seen and unseen configurations, while the baselines sometimes get confused by the placement of distractors. We also observe that Task-VIOLA sometimes lose bounding box on the white bowl when the gripper approaches to it. <b> Scroll left to see baseline performance.</b>
+      </p>
+  </div>
+  <div class="video-scroll-wrapper" id="videoScroll1">
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/CIVIL_bowl.mp4"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/oo_bowl.mp4"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/film_bowl.mp4"></video>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <!-- Simulation 2. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!-- Update Title. -->
+          <h2 class="title is-2">User Study</h2>
+          <!-- <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/some_img.png" style="width: 50%;"></img>
+          </div> -->
+          <div class="content has-text-justified">
+            <p>
+              We conducted a study to evaluate if user can place markers and provide language prompts without hindering their ability to provide demonstrations.
+              In this study participants taugh a 7DoF Franka Emika robot arm to pick a cup and place it under a coffee machine using a joystick, each participant was given 5 minutes
+              to provide demonstrations with and without additional inputs. On average users provided 11 demontrations without any additional inputs, and 9 demonstrations when also working
+              with markers and language. Our results suggest that CIVIL outperforms Behavior Cloning (BC) given the same amount of time for collecting data.
+            </p>
+          </div>
+          <video autoplay muted loop width="1080">
+            <!-- Update video -->
+            <source src="./static/resources/user_study.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="">
+     <i class="fas fa-file-pdf"></i>
+   </a>
+   <a class="icon-link" href="https://civil2025.github.io/" class="external-link" disabled>
+     <i class="fab fa-github"></i>
+   </a>
+      <p>Page template borrowed from  <a href="https://human2robot.github.io/"><span class="dnerf">Whirl</span></a>, <a href="https://nerfies.github.io"><span class="dnerf">Nerfies</span></a>, <a href="https://energy-locomotion.github.io/"><span class="dnerf">Energy Locomotion</span></a> and <a href="https://robotic-telekinesis.github.io/"><span class="dnerf">Robotic Telekinesis</span></a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
