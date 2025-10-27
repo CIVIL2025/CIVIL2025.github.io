@@ -103,14 +103,31 @@
               <style>
               .author-block a {color: rgb(255, 153, 0) !important; text-decoration: none;font-weight: 500;}
               .author-block a:hover {color: rgb(255, 120, 0) !important; text-decoration: underline;}
+              .author-block {
+                white-space: nowrap; /* prevent breaking mid-name */
+              }
+
+              .author-block a,
+              .author-block span {
+                white-space: nowrap; /* each name stays together */
+              }
+
+              .author-block br {
+                display: none; /* ensure <br> doesn’t interfere */
+              }
+
+              .author-block .comma::after {
+                content: ", ";
+                white-space: normal; /* allow break after comma */
+              }
               </style>
              <span class="author-block"></sup>
-              <a href="https://yinlongdai.github.io/" target="_blank">Yinlong Dai*</a>,
-              <a href="https://www.linkedin.com/in/robertjrs/" target="_blank">Robert Ramirez Sanchez*</a>, 
-              <a href="https://www.linkedin.com/in/ryan-jeronimus-6aa4962aa/" target="_blank">Ryan Jeronimus</a>, 
-              <a href="https://www.sagheb.net/" target="_blank">Robert Ramirez Sanchez*</a>, 
-              <a href="https://robotics.cornell.edu/faculty/cara-m-nunez/" target="_blank">Cara M. Nunez</a>, 
-              <a href="https://herambnemlekar.github.io/" target="_blank">Heramb Nemlekar</a>, 
+              <a href="https://yinlongdai.github.io/" target="_blank">Yinlong Dai*</a><span class="comma"></span>
+              <a href="https://www.linkedin.com/in/robertjrs/" target="_blank">Robert Ramirez Sanchez*</a><span class="comma"></span>
+              <a href="https://www.linkedin.com/in/ryan-jeronimus-6aa4962aa/" target="_blank">Ryan Jeronimus</a><span class="comma"></span> 
+              <a href="https://www.sagheb.net/" target="_blank">Robert Ramirez Sanchez*</a><span class="comma"></span> 
+              <a href="https://robotics.cornell.edu/faculty/cara-m-nunez/" target="_blank">Cara M. Nunez</a><span class="comma"></span> 
+              <a href="https://herambnemlekar.github.io/" target="_blank">Heramb Nemlekar</a><span class="comma"></span> 
               <a href="https://dylanlosey.com/" target="_blank">Dylan P. Losey</a></span>
             <br>
             <span class="brmod">Under Review</span>
